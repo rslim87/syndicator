@@ -1,0 +1,24 @@
+<%= form_for @event do |f| %>
+	<%= f.label :eventName %>
+	<%= f.text_field :eventName %>
+	<br>
+	<br>
+	<%= f.label :eventLocation %>
+	<%= f.text_field :eventLocation %>
+	<br>
+	<br>
+	<%= f.label :eventDescription %>
+	<%= f.text_area :eventDescription %>
+	<br>
+	<br>
+	Date and Time of the Event (Format: 2017/09/08 11:18:00):
+	<%= f.text_field :eventDate %>
+	<br>
+	<br>
+	<%= f.label :eventCost %>
+	<%= f.number_field :eventCost %>
+	<br>
+	<br>
+	<%= f.submit %>
+
+<% end %>
